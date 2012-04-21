@@ -1,7 +1,13 @@
+set nocompatible    " Use Vim defaults (much better!)
+
+" Enable tpope's vim-pathogen
+call pathogen#infect()
+call pathogen#helptags()
+
 set printoptions=paper:letter
 set ts=2
-set bg=dark
-set nocompatible    " Use Vim defaults (much better!)
+set background=dark
+colorscheme solarized
 
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more than 50 lines of registers
 
@@ -10,6 +16,15 @@ set ruler       " show the cursor position all the time
 set showcmd " display incomplete commands
 set incsearch " incremental searching
 set showmatch
+
+set hidden " Buffer magic stuff
+set title
+
+" PowerLine magic
+set encoding=utf-8 " Necessary to show unicode glyphs
+set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
+let Powerline_symbols="fancy"
+"let Powerline_symbols="unicode"
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -99,9 +114,11 @@ map <F2> :%!perltidy<C-M>
 set cindent
 set number
 
-" Enable tpope's vim-pathogen and fugitive
-call pathogen#infect()
-
 " Status line options
 set laststatus=2
+
+" Custom leader 
+let mapleader = ";"
+" Gundo toggle
+map <leader>g :GundoToggle<CR>
 
