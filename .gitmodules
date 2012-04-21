@@ -1,0 +1,21 @@
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = http://github.com/tpope/vim-pathogen.git
+[submodule "autoload"]
+	path = autoload
+	url = http://github.com/tpope/vim-pathogen.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = http://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = http://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = http://github.com/altercation/vim-colors-solarized.git
