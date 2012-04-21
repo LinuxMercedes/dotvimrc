@@ -23,7 +23,7 @@ set title
 " PowerLine magic
 set encoding=utf-8 " Necessary to show unicode glyphs
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
-let Powerline_symbols="fancy"
+let Powerline_symbols="fancy" " Use fancy unicode symbols (if you have a patched font)
 "let Powerline_symbols="unicode"
 
 " Switch syntax highlighting on, when the terminal has colors
