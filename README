@@ -1,0 +1,11 @@
+Modules:
+Pathogen
+Powerline
+Fugitive
+Gundo (save diff trees!)
+syntastic
+solarized color scheme
+
+Installing: 
+copy everything to .vim
+ln -s ~/.vim ~/.vim/vimrc
