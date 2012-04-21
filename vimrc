@@ -122,3 +122,10 @@ let mapleader = ";"
 " Gundo toggle
 map <leader>g :GundoToggle<CR>
 
+" Map lnext and lprev (for syntastic)
+map <leader>ln :lnext<CR>
+map <leader>lp :lprev<CR>
+
+" show taglist
+map <leader>tl :TlistToggle<CR>
+
