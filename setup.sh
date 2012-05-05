@@ -1,4 +1,5 @@
-cp -r vim-pathogen/autoload .
-cp -r taglist.vim/plugin .
-cp -r taglist.vim/doc .
+ln -s `pwd`/vimrc ~/.vimrc
+ln -s `pwd`/vim-pathogen/autoload .
+ln -s `pwd`/taglist.vim/plugin .
+ln -s `pwd`/taglist.vim/doc .
 
