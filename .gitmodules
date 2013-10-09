@@ -10,12 +10,15 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-powerline"]
-	path = bundle/vim-powerline
-	url = http://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = http://github.com/altercation/vim-colors-solarized.git
 [submodule "taglist.vim"]
 	path = taglist.vim
 	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/colorschemes"]
+	path = bundle/colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
