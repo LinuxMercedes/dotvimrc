@@ -81,7 +81,7 @@ set nobackup
 set novisualbell
 set noerrorbells
 set vb t_vb=
-			
+
 set binary noeol
 
 " Only do this part when compiled with support for autocommands.
@@ -121,7 +121,7 @@ set number
 " Status line options
 set laststatus=2
 
-" Custom leader 
+" Custom leader
 let mapleader = ";"
 " Gundo toggle
 map <leader>g :GundoToggle<CR>
