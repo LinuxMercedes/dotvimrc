@@ -24,8 +24,6 @@ set title
 " PowerLine magic
 set encoding=utf-8 " Necessary to show unicode glyphs
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
-"let Powerline_symbols="fancy" " Use fancy unicode symbols (if you have a patched font)
-let Powerline_symbols="unicode"
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
