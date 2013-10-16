@@ -132,3 +132,13 @@ map <leader>lp :lprev<CR>
 " show taglist
 map <leader>tl :TlistToggle<CR>
 
+" diff options
+set diffopt+=iwhite
+
+filetype plugin on
+filetype indent on
+
+" vim-latex config
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+
