@@ -1,6 +1,6 @@
 Modules:
 Pathogen
-Powerline
+Airline
 Fugitive
 Gundo (save diff trees!)
 syntastic
