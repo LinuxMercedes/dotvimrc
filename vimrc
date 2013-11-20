@@ -37,10 +37,6 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-if has("gui_running")
-  colorscheme darkblue
-endif
-
 " enable mouse
 if has("mouse")
   set mouse=a
@@ -142,4 +138,7 @@ filetype indent on
 " vim-latex config
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
+
+" Stop YCM from working in tex files
+let g:ycm_filetype_blacklist = {'tex' : 0}
 
