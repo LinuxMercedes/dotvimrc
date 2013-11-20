@@ -10,6 +10,8 @@ set background=light
 colorscheme solarized
 "colorscheme nuvola
 
+map ; :
+noremap ;; ;
 
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more than 50 lines of registers
 
