@@ -142,5 +142,5 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 
 " Stop YCM from working in tex files
-let g:ycm_filetype_blacklist = {'tex' : 0}
+let g:ycm_filetype_blacklist = {'tex' : 0, 'mkd' : 0, 'gitcommit' : 0}
 
