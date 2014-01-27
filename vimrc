@@ -6,9 +6,8 @@ call pathogen#helptags()
 
 set printoptions=paper:letter
 set ts=2
-set background=light
-colorscheme solarized
-"colorscheme nuvola
+set background=dark
+colorscheme slate " tango tango2 tango-morning two2tango 
 
 map ; :
 noremap ;; ;
@@ -30,7 +29,7 @@ set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'luna'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
