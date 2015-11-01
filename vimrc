@@ -6,8 +6,8 @@ call pathogen#helptags()
 
 set printoptions=paper:letter
 set ts=2
-set background=dark
-colorscheme slate " tango tango2 tango-morning two2tango 
+set background=light
+colorscheme flatui "slate tango tango2 tango-morning two2tango 
 
 map ; :
 noremap ;; ;
@@ -51,7 +51,7 @@ endif
 
 set noautoindent
 
-set textwidth=78
+set textwidth=70
 "Wrap at this column
 
 set backspace=indent,eol,start
@@ -103,13 +103,13 @@ autocmd BufNewFile,BufRead *.hh setlocal expandtab
 autocmd BufNewFile,BufRead *.hpp setlocal expandtab
 autocmd BufNewFile,BufRead *.xml setlocal expandtab
 autocmd BufNewFile,BufRead *.sql setlocal expandtab
-autocmd BufNewFile,BufRead *.py setlocal expandtab
+"autocmd BufNewFile,BufRead *.py setlocal expandtab
 "autocmd BufNewFile,BufRead *.pl setlocal expandtab
 "autocmd BufNewFile,BufRead *.pm setlocal expandtab
 
 " set a reasonable search color
-highlight search guibg=LightBlue
-highlight search ctermbg=LightBlue
+highlight search guibg=Red
+highlight search ctermbg=Red
 "
 map <F2> :%!perltidy<C-M>
 set cindent
@@ -133,7 +133,7 @@ map <leader>tl :TlistToggle<CR>
 " diff options
 set diffopt+=iwhite
 
-filetype plugin on
+"filetype plugin on
 filetype indent on
 
 " vim-latex config
@@ -142,4 +142,13 @@ let g:tex_flavor='latex'
 
 " Stop YCM from working in tex files
 let g:ycm_filetype_blacklist = {'tex' : 0, 'mkd' : 0, 'gitcommit' : 0}
+
+
+" sane regex {{{
+nnoremap / /\v
+vnoremap / /\v
+nnoremap ? ?\v
+vnoremap ? ?\v
+nnoremap :s/ :s/\v
+" }}}
 
