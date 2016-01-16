@@ -118,8 +118,9 @@ set number
 " Status line options
 set laststatus=2
 
-" Custom leader
-let mapleader = ";"
+" Custom leaders
+"let mapleader = "_"
+
 " Gundo toggle
 map <leader>g :GundoToggle<CR>
 
@@ -133,7 +134,7 @@ map <leader>tl :TlistToggle<CR>
 " diff options
 set diffopt+=iwhite
 
-"filetype plugin on
+filetype plugin on
 filetype indent on
 
 " vim-latex config
@@ -141,7 +142,7 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 
 " Stop YCM from working in tex files
-let g:ycm_filetype_blacklist = {'tex' : 0, 'mkd' : 0, 'gitcommit' : 0}
+let g:ycm_filetype_blacklist = {'tex' : 0, 'markdown' : 0, 'gitcommit' : 0}
 
 
 " sane regex {{{
