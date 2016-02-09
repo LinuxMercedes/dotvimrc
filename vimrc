@@ -140,9 +140,7 @@ filetype indent on
 " vim-latex config
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
-
-" Stop YCM from working in tex files
-let g:ycm_filetype_blacklist = {'tex' : 0, 'markdown' : 0, 'gitcommit' : 0}
+let g:Tex_Leader="&"
 
 
 " sane regex {{{
