@@ -128,6 +128,9 @@ map <leader>g :GundoToggle<CR>
 map <leader>ln :lnext<CR>
 map <leader>lp :lprev<CR>
 
+" Ignore some annoying LaTeX warnings from syntastic
+let g:syntastic_quiet_messages = {"regex": "\\(Do not use @ in LaTeX macro names\\|Could not open.*@base\\)"}
+
 " show taglist
 map <leader>tl :TlistToggle<CR>
 
