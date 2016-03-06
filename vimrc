@@ -151,3 +151,6 @@ vnoremap ? ?\v
 nnoremap :s/ :s/\v
 " }}}
 
+set list      " Show tabs and newlines
+set listchars=tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<
+
