@@ -130,6 +130,8 @@ map <leader>lp :lprev<CR>
 
 " Ignore some annoying LaTeX warnings from syntastic
 let g:syntastic_quiet_messages = {"regex": "\\(Do not use @ in LaTeX macro names\\|Could not open.*@base\\)"}
+let g:syntastic_tex_chktex_showmsgs = 0
+let g:syntastic_tex_chktex_quiet_messages = {"type": "style"}
 
 " show taglist
 map <leader>tl :TlistToggle<CR>
