@@ -4,15 +4,9 @@
 [submodule "vim-pathogen"]
 	path = vim-pathogen
 	url = http://github.com/tpope/vim-pathogen.git
-[submodule "bundle/gundo"]
-	path = bundle/gundo
-	url = http://github.com/sjl/gundo.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = http://github.com/altercation/vim-colors-solarized.git
 [submodule "taglist.vim"]
 	path = taglist.vim
 	url = http://github.com/vim-scripts/taglist.vim.git
@@ -22,10 +16,9 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-
 [submodule "bundle/idris-vim"]
 	path = bundle/idris-vim
 	url = https://github.com/idris-hackers/idris-vim.git
+[submodule "bundle/vim-haskell-indent"]
+	path = bundle/vim-haskell-indent
+	url = https://github.com/itchyny/vim-haskell-indent.git
