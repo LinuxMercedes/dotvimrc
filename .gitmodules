@@ -22,3 +22,6 @@
 [submodule "bundle/vim-haskell-indent"]
 	path = bundle/vim-haskell-indent
 	url = https://github.com/itchyny/vim-haskell-indent.git
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
