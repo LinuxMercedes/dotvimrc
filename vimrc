@@ -76,6 +76,7 @@ vnoremap / /\v
 nnoremap ? ?\v
 vnoremap ? ?\v
 nnoremap :s/ :s/\v
+vnoremap :s/ :s/\v
 " }}}
 
 set cindent
@@ -133,8 +134,8 @@ let g:syntastic_quiet_messages = {"regex": "\\(Do not use @ in LaTeX macro names
 let g:syntastic_tex_chktex_showmsgs = 0
 let g:syntastic_tex_chktex_quiet_messages = {"type": "style"}
 
-" Enable C++11 features
-let g:syntastic_cpp_compiler_options = ' -std=c++11'
+" Enable C++14 features
+let g:syntastic_cpp_compiler_options = ' -std=c++14'
 
 " show taglist
 map <leader>tl :TlistToggle<CR>
