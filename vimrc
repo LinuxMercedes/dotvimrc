@@ -6,6 +6,8 @@ set list      " Show tabs and newlines
 set listchars=tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<
 set number
 
+set wildmenu
+
 " Indenting options
 set ts=2
 set noautoindent
@@ -82,6 +84,7 @@ vnoremap :s/ :s/\v
 set cindent
 filetype plugin on
 filetype indent on
+set modeline
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -135,7 +138,10 @@ let g:syntastic_tex_chktex_showmsgs = 0
 let g:syntastic_tex_chktex_quiet_messages = {"type": "style"}
 
 " Enable C++14 features
-let g:syntastic_cpp_compiler_options = ' -std=c++14'
+let g:syntastic_cpp_compiler_options = ' -std=c++17'
+
+" Disable pylint as it is too slow
+let g:syntastic_python_checkers = ['python', 'pyflakes']
 
 " show taglist
 map <leader>tl :TlistToggle<CR>
