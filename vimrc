@@ -137,8 +137,9 @@ let g:syntastic_quiet_messages = {"regex": "\\(Do not use @ in LaTeX macro names
 let g:syntastic_tex_chktex_showmsgs = 0
 let g:syntastic_tex_chktex_quiet_messages = {"type": "style"}
 
-" Enable C++14 features
+" Enable C++17 features
 let g:syntastic_cpp_compiler_options = ' -std=c++17'
+"let g:syntastic_cpp_config_file = '.syntastic_cpp_gcc_config'
 
 " Disable pylint as it is too slow
 let g:syntastic_python_checkers = ['python', 'pyflakes']
@@ -151,3 +152,7 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_Leader="&"
 
+" Enable vim-pandoc-syntax on .md files
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+let g:pandoc#syntax#conceal#use = 0
+let g:pandoc#syntax#codeblocks#embeds#langs = ["cpp", "shell=sh"]
